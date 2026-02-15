@@ -6,8 +6,8 @@ from playwright.sync_api import sync_playwright
 from google import genai
 
 # --- CONFIGURATION ---
-SERVICE_ACCOUNT_PATH = r"D:\Trailhead\x-landing-444011-a5-7c69387f56d9.json"
-PROJECT_ID = "x-landing-444011-a5"
+SERVICE_ACCOUNT_PATH = r"D:\Trailhead\replace-service-acc-here.json"
+PROJECT_ID = "replace-project-id"
 LOCATION = "us-central1"
 USER_DATA_DIR = "D:/playwright_data"
 INPUT_FILE = "unique.csv"
@@ -144,4 +144,5 @@ def run_batch():
         context.close() # This shuts down all tabs and the browser window
 
 if __name__ == "__main__":
+
     run_batch()
