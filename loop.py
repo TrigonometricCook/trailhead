@@ -6,10 +6,10 @@ from playwright.sync_api import sync_playwright
 from google import genai
 
 # --- CONFIGURATION ---
-SERVICE_ACCOUNT_PATH = r"D:\Trailhead\replace-service-acc-here.json"
-PROJECT_ID = "replace-project-id"
+SERVICE_ACCOUNT_PATH = r"D:\Trailhead\replace-service-acc-here.json" #path to service account
+PROJECT_ID = "replace-project-id" #replace with the project id
 LOCATION = "us-central1"
-USER_DATA_DIR = "D:/playwright_data"
+USER_DATA_DIR = "D:/playwright_data" #the folder where the login info is saved by savelogin.py
 INPUT_FILE = "unique.csv"
 OUTPUT_FILE = "trail_solve_status.csv"
 
@@ -146,3 +146,4 @@ def run_batch():
 if __name__ == "__main__":
 
     run_batch()
+
